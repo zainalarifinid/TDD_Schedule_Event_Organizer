@@ -25,7 +25,7 @@ class ScheduleView {
         /**
          * @TODO: Implementation
          */
-        return 0;
+        return $this->schedule->count();
     }
 
     /**

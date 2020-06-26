@@ -82,5 +82,9 @@ abstract class Timeslot
         /**
          * @TODO: Implementation
          */
+
+        return  $timeslot->getStartsAt() >= $this->getStartsAt()
+                || $timeslot->getEndsAt() >= $this->getStartsAt()
+                &&  $timeslot->getStartsAt() <= $this->getEndsAt();
     }
 }

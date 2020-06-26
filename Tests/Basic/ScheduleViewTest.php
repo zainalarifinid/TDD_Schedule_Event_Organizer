@@ -15,10 +15,11 @@ class ScheduleViewTest extends \PHPUnit_Framework_TestCase
     public function testCalculateNumberOfTimeslots($timeslots, int $numberOfTimeslots)
     {
         $schedule = new \Schedule();
-
+        print_r($timeslots);
         foreach ($timeslots as $timeslot) {
             $schedule->addTimeslot($timeslot);
         }
+        print_r($schedule);
 
         $view = new \ScheduleView($schedule);
 

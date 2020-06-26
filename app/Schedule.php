@@ -65,6 +65,7 @@ class Schedule implements Iterator, Countable {
         /**
          * @TODO: Implementation
          */
+        return count($this->timeslots);
     }
 
     /**
